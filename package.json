@@ -1,0 +1,44 @@
+{
+  "name": "simple-date-picker",
+  "version": "0.1.0",
+  "description": "A simple clean way to pick dates with React ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config=dev/webpack.config.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "watch": "rm -rf lib/* && babel src -d lib -w"
+  },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-day-picker": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.0.0",
+    "eslint": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcanti/simple-date-picker.git"
+  },
+  "author": "Giulio Canti <giulio.canti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gcanti/simple-date-picker/issues"
+  },
+  "homepage": "https://github.com/gcanti/simple-date-picker",
+  "keywords": [
+    "react",
+    "react-component",
+    "date",
+    "date-picker",
+    "picker"
+  ],
+  "tags": [
+    "react",
+    "react-component",
+    "date",
+    "date-picker",
+    "picker"
+  ]
+}
