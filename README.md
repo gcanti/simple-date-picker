@@ -5,7 +5,7 @@ A thin wrapper of [react-day-picker](https://github.com/gpbl/react-day-picker)
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SimpleDatePicker from '../.';
+import SimpleDatePicker from 'simple-date-picker';
 
 class StatefullDatePicker extends React.Component {
 

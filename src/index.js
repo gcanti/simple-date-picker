@@ -12,7 +12,6 @@ export default class SimpleDatePicker extends React.Component {
 
   constructor(...args) {
     super(...args);
-    throw new Error();
     this.state = { isOpen: false };
   }
 
