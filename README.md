@@ -34,4 +34,3 @@ ReactDOM.render(<StatefullDatePicker />, document.getElementById('app'));
 - `format(date: Date) => string` (optional)
 - `template(locals) => ReactElement` (optional)
 - `disabled: boolean` (optional)
-- `localeUtils`, `locale`: same as react-day-picker

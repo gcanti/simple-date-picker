@@ -1,43 +1,40 @@
-import React from 'react';
+import React from 'react'
 
 export default class SimpleDatePicker extends React.Component {
 
   static propTypes = {
-    value: React.PropTypes.any,
     onChange: React.PropTypes.func.isRequired,
-    template: React.PropTypes.func,
-    format: React.PropTypes.func,
-    disabled: React.PropTypes.bool
+    template: React.PropTypes.func
   }
 
   constructor(...args) {
-    super(...args);
-    this.state = { isOpen: false };
+    super(...args)
+    this.state = { isOpen: false }
   }
 
   open = () => {
-    this.setState({ isOpen: true });
+    this.setState({ isOpen: true })
   }
 
   close = () => {
-    this.setState({ isOpen: false });
+    this.setState({ isOpen: false })
   }
 
   toggle = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+    this.setState({ isOpen: !this.state.isOpen })
   }
 
   onReset = () => {
     this.setState({ isOpen: false }, () => {
-      this.props.onChange(null);
-    });
+      this.props.onChange(null)
+    })
   }
 
   onSelect = (e, value) => {
     this.setState({ isOpen: false }, () => {
-      this.props.onChange(value);
-    });
-  };
+      this.props.onChange(value)
+    })
+  }
 
   getLocals() {
     return {
@@ -47,21 +44,17 @@ export default class SimpleDatePicker extends React.Component {
       toggle: this.toggle,
       onReset: this.onReset,
       onSelect: this.onSelect,
-      value: this.props.value,
-      format: this.props.format,
-      disabled: this.props.disabled,
-      localeUtils: this.props.localeUtils,
-      locale: this.props.locale
-    };
+      ...this.props
+    }
   }
 
   getTemplate() {
-    return this.props.template || this.constructor.template;
+    return this.props.template || this.constructor.template
   }
 
   render() {
-    const template = this.getTemplate();
-    return template(this.getLocals());
+    const template = this.getTemplate()
+    return template(this.getLocals())
   }
 
 }
