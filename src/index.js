@@ -1,10 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 export default class SimpleDatePicker extends React.Component {
 
   static propTypes = {
-    onChange: React.PropTypes.func.isRequired,
-    template: React.PropTypes.func
+    onChange: PropTypes.func.isRequired,
+    template: PropTypes.func
   }
 
   constructor(...args) {

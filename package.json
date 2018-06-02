@@ -11,6 +11,7 @@
     "build": "rm -rf lib && mkdir lib && babel --out-dir lib src"
   },
   "dependencies": {
+    "prop-types": "^15.6.1",
     "react-day-picker": "^1.0.0"
   },
   "peerDependencies": {
